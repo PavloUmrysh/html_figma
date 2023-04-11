@@ -8,6 +8,8 @@
 @import "header.scss";
 @import "headline.scss";
 @import "tips.scss";
+@import "order.scss";
+@import "myinbox.scss";
 
 * {
   box-sizing: border-box;
@@ -21,12 +23,9 @@ html {
 
 .page {
   width: 100%;
-  overflow-x: hidden;
-}
 
-@media screen and (min-width: 400px) {
-  .page {
-    width: 1400px;
+  @include for-large-up {
+    max-width: 1400px;
     margin: auto;
     min-height: 100vh;
     display: flex;

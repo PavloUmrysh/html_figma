@@ -1,0 +1,159 @@
+.inbox {
+  padding: 50px 15px;
+  background-color: #fcf0e3;
+
+  @include for-large-up {
+    display: flex;
+    margin-top: 103px;
+  }
+
+  &__illustration {
+    max-width: 100%;
+
+    @include for-large-up {
+      width: 425px;
+      height: 510px;
+    }
+  }
+
+  &__figure-text {
+    display: none;
+
+    @include for-large-up {
+      display: flex;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__large-tip {
+    @include for-large-up {
+      margin-left: 164px;
+      width: 519px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: #f1592b;
+    margin-top: 32px;
+
+    @include for-large-up {
+      margin-top: 0;
+      padding-left: 28px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.36px;
+    margin-top: 17px;
+
+    @include for-large-up {
+      margin-top: 24px;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+      padding-left: 28px;
+    }
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0;
+    margin-top: 18px;
+
+    @include for-large-up {
+      margin-top: 30px;
+      margin-bottom: 44px;
+      padding-left: 28px;
+    }
+  }
+  /*
+  &__caption {
+    display: none;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: aqua;
+    margin-top: 15px;
+
+    @include for-large-up {
+      display: block;
+    }
+  }
+  */
+}
+
+.review {
+  background-color: #ffff;
+  padding: 30px 20px;
+  box-shadow: 0px, 4px rgba(0, 0, 0, 0.05), 0px, 1px rgba(0, 0, 0, 0.1), 0px,
+    1px rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid blue;
+
+  @include for-large-up {
+    padding: 30px;
+  }
+
+  &__large-section {
+    @include for-large-up {
+      height: 213px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+
+    &text_weight {
+      font-weight: 700;
+    }
+  }
+
+  &__author {
+    margin-top: 26px;
+    display: flex;
+  }
+
+  &__author {
+    margin-top: 26px;
+    display: flex;
+  }
+
+  &__author-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 11px;
+  }
+
+  &__author-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__author-title {
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+    margin: 0;
+  }
+
+  &large-screen {
+    @include for-large-up {
+      line-height: 22px;
+    }
+  }
+}
